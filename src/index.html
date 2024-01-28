@@ -9,16 +9,87 @@
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
     <link href="https://fonts.googleapis.com/css2?family=Roboto:wght@400;700;900&display=swap" rel="stylesheet">
     <link rel="stylesheet" href="styles/main.scss">
+    <link rel="stylesheet" href="https://unpkg.com/aos@next/dist/aos.css" />
 </head>
 <body>
     <header class="hero">
         <div class="container">
             <img class="hero__logo" src="./images/pallogo.jpg" alt="tema da festa">
             <p class="hero__text">
-            O aniversário do Guilherme começa em: 10d 12h 20m 15s
+            O aniversário do Gui começa em: <span id="contador"></span>
             </p>
+            <div class="infos-bar">
+                <ul class="infos-bar__infos">
+                    <li class="infos-bar__infos__item">
+                        Casa do Guilherme n19
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        Proibida entrada com camiseta do corinthias!
+                    </li>
+                    <li class="infos-bar__infos__item">
+                        01/05/2024 ás 16:00
+                    </li>
+                </ul>
+                <a href="a" class="button button--primary">
+                    Marque sua presença!
+                </a>
+            </div>
         </div>
     </header>
+
+    <section class="event event--doces">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    <p class="event__details__description">
+                        O evento contará com uma variedade de doces!
+                    </p>
+                </h2>
+            </div>
+            <img class="event__image" src="images/doces.jpg" alt="doces de festa">
+        </div>
+    </section>
+
+    <section class="event event--salgados event--image-left">
+        <div class="container" data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    <p class="event__details__description">
+                    Também contaremos com uma grande variedade de salgados! Hot dogs, esfihas, pizza, e muito mais.
+                    </p>
+                </h2>
+            </div>
+            <img class="event__image" src="images/salgados.jpg" alt="doces de festa">
+        </div>
+    </section>
+
+    <section class="event event--microfone ">
+        <div class="container" data-aos="fade-right">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    <p class="event__details__description">
+                        Venha passar uma vergonha com a gente! Karaokê disponível durante toda a festa! A melhor apresentação leva um saco de doces para casa!
+                    </p>
+                </h2>
+            </div>
+            <img class="event__image" src="images/microfone.jpg" alt="doces de festa">
+        </div>
+    </section>
+
+    <section class="event event--presentes  event--image-left">
+        <div class="container"  data-aos="fade-left">
+            <div class="event__details">
+                <h2 class="event__details__title">
+                    <p class="event__details__description">
+                        Ah! e não se esqueça da lembrancinha do aniversariante! Dica: ele é palmeirense.
+                    </p>
+                </h2>
+            </div>
+            <img class="event__image" src="images/presente.jpg" alt="doces de festa">
+        </div>
+    </section>
+    
+    <script src="https://unpkg.com/aos@next/dist/aos.js"></script>
     <script src="scripts/main.js"></script>
     
 </body>

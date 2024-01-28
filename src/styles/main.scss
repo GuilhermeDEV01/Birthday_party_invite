@@ -1,10 +1,15 @@
 @use 'hero';
+@use 'components/infos_bar';
+@use 'components/buttons';
+@use 'event';
+@use 'variables';
 
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
     font-family: Roboto, sans-serif;
+    color: variables.$textColor;
     list-style: none;
 }
 
@@ -12,6 +17,10 @@
     max-width: 960px;
     width: 100%;
     margin: 0 auto;
+
+    #contador {
+        color: #000;
+    }
 
     @media (max-width: 640px) {
         max-width: 80%;
